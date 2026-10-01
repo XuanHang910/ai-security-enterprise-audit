@@ -1,0 +1,158 @@
+{
+    "test_runs": [
+        {
+            "timestamp": "2026-10-01T07:21:51.694527Z",
+            "module": "Target 1",
+            "test_type": "Data Poisoning / Backdoor (MITRE ATLAS AML.T0020)",
+            "metrics": {
+                "ASR": 0.9986000061035156
+            }
+        },
+        {
+            "timestamp": "2026-10-01T07:22:01.685809Z",
+            "module": "Target 2",
+            "test_type": "RAG Security (OWASP LLM01 & LLM06)",
+            "metrics": {
+                "test_1_Prompt Injection (OWASP LLM01)": {
+                    "error": "HTTPConnectionPool(host='127.0.0.1', port=8002): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000218F7AAA130>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))"
+                },
+                "test_2_Sensitive Data Leakage (OWASP LLM06)": {
+                    "error": "HTTPConnectionPool(host='127.0.0.1', port=8002): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000218F7AAAC10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))"
+                }
+            }
+        },
+        {
+            "timestamp": "2026-10-01T07:26:41.417957Z",
+            "module": "Target 1",
+            "test_type": "Data Poisoning / Backdoor (MITRE ATLAS AML.T0020)",
+            "metrics": {
+                "ASR": 0.9858999848365784
+            }
+        },
+        {
+            "timestamp": "2026-10-01T07:26:49.879936Z",
+            "module": "Target 2",
+            "test_type": "RAG Security (OWASP LLM01 & LLM06)",
+            "metrics": {
+                "test_1_Prompt Injection (OWASP LLM01)": {
+                    "error": "HTTPConnectionPool(host='127.0.0.1', port=8002): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001423541A130>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))"
+                },
+                "test_2_Sensitive Data Leakage (OWASP LLM06)": {
+                    "error": "HTTPConnectionPool(host='127.0.0.1', port=8002): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001423541AC10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))"
+                }
+            }
+        },
+        {
+            "timestamp": "2026-10-01T07:33:34.525625Z",
+            "module": "Target 1",
+            "test_type": "Adversarial Evasion (MITRE ATLAS AML.T0015)",
+            "metrics": {
+                "baseline_accuracy": 0.11,
+                "FGSM": {
+                    "0.05": 0.11,
+                    "0.1": 0.11,
+                    "0.2": 0.11
+                },
+                "PGD": {
+                    "0.05": 0.11,
+                    "0.1": 0.11,
+                    "0.2": 0.11
+                }
+            }
+        },
+        {
+            "timestamp": "2026-10-01T07:33:56.311355Z",
+            "module": "Target 1",
+            "test_type": "Data Poisoning / Backdoor (MITRE ATLAS AML.T0020)",
+            "metrics": {
+                "ASR": 0.9980000257492065
+            }
+        },
+        {
+            "timestamp": "2026-10-01T07:34:00.053535Z",
+            "module": "Target 1",
+            "test_type": "Membership Inference (MITRE ATLAS AML.T0024)",
+            "metrics": {
+                "mia_accuracy": 0.498
+            }
+        },
+        {
+            "timestamp": "2026-10-01T07:34:04.654911Z",
+            "module": "Target 2",
+            "test_type": "RAG Security (OWASP LLM01 & LLM06)",
+            "metrics": {
+                "test_1_Prompt Injection (OWASP LLM01)": {
+                    "error": "HTTPConnectionPool(host='127.0.0.1', port=8002): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024D93BEA130>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))"
+                },
+                "test_2_Sensitive Data Leakage (OWASP LLM06)": {
+                    "error": "HTTPConnectionPool(host='127.0.0.1', port=8002): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024D93BEAC10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))"
+                }
+            }
+        },
+        {
+            "timestamp": "2026-10-01T07:38:13.435349Z",
+            "module": "Target 1",
+            "test_type": "Adversarial Evasion (MITRE ATLAS AML.T0015)",
+            "metrics": {
+                "baseline_accuracy": 0.77,
+                "FGSM": {
+                    "0.05": 0.52,
+                    "0.1": 0.31,
+                    "0.2": 0.1
+                },
+                "PGD": {
+                    "0.05": 0.44,
+                    "0.1": 0.23,
+                    "0.2": 0.23
+                }
+            }
+        },
+        {
+            "timestamp": "2026-10-01T07:38:38.195576Z",
+            "module": "Target 1",
+            "test_type": "Data Poisoning / Backdoor (MITRE ATLAS AML.T0020)",
+            "metrics": {
+                "ASR": 0.9922999739646912
+            }
+        },
+        {
+            "timestamp": "2026-10-01T07:38:41.831979Z",
+            "module": "Target 1",
+            "test_type": "Membership Inference (MITRE ATLAS AML.T0024)",
+            "metrics": {
+                "mia_accuracy": 0.498
+            }
+        },
+        {
+            "timestamp": "2026-10-01T07:38:46.402007Z",
+            "module": "Target 2",
+            "test_type": "RAG Security (OWASP LLM01 & LLM06)",
+            "metrics": {
+                "test_1_Prompt Injection (OWASP LLM01)": {
+                    "error": "HTTPConnectionPool(host='127.0.0.1', port=8002): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E603ADA130>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))"
+                },
+                "test_2_Sensitive Data Leakage (OWASP LLM06)": {
+                    "error": "HTTPConnectionPool(host='127.0.0.1', port=8002): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E603ADAC10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))"
+                }
+            }
+        },
+        {
+            "timestamp": "2026-10-01T07:43:54.393801Z",
+            "module": "Target 2 Defense",
+            "test_type": "Guardrails Middleware Evaluation",
+            "metrics": {
+                "block_rate": 1.0,
+                "latency_overhead_ms": 0.0
+            }
+        },
+        {
+            "timestamp": "2026-10-01T07:43:54.417991Z",
+            "module": "Target 1 Defense",
+            "test_type": "Robustness & Privacy Improvements",
+            "metrics": {
+                "delta_acc_adversarial_recovery": 35.5,
+                "delta_acc_mia_reduction": 15.0
+            }
+        }
+    ]
+}
